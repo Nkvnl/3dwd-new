@@ -1,0 +1,70 @@
+<link rel='stylesheet' href='/css/contact.css'/>
+{{> header }}
+{{!--<div class="container-fluid text-center" id="main">--}}
+{{!--    <div class="container px-5">--}}
+{{!--        <h1 class="display-3 thin">Neem contact op<span>.</span></h1>--}}
+{{!--        <hr class="w-50">--}}
+{{!--        <div class="row">--}}
+{{!--            <div class="col-md-6 mx-auto"><p>Om een offerte aan te vragen, een vraag te stellen, of om gewoon even te  <span><strong>brainstormen</strong></span>.</p></div>--}}
+            {{!--<div class="col-md-6"><p>Mijn doel is om websites te bouwen voor elk budget, zonder dat dit ten koste gaat van het design of <span><strong>functionaliteit</strong></span></p></div>--}}
+{{!--        </div>--}}
+{{!--        <a href="/" class="btn mt-3 btn-light">Hello <span>&rarr;</span></a>--}}
+{{!--    </div>--}}
+{{!--</div>--}}
+
+<div class="container-fluid" id="contact-form">
+    <a href="/">
+    <div id="back">
+        
+        <div style="font-size:24px;">Terug</div>
+    </div>
+    </a>
+    <div class="container">
+        <div class="col-md-10 mx-auto pt">
+        <form action="/contact" method="post">
+            <div class="row">
+                <div class="col-md-6 pr-5" style="border-right:2px solid #ffb400">
+                <h3>Vul het contactformulier in</h3>
+    <input type="text" id="fname" name="firstname" class="w-100 my-2" placeholder="Voornaam">
+    <input type="text" id="lname" name="lastname" class="w-100 my-2" placeholder="Achternaam">
+    <input type="tel" id="phone" name="phone" class="w-100 my-2" placeholder="Telefoon (optioneel)">
+    <input type="tel" id="mail" name="mail" class="w-100 my-2" placeholder="E-mail">
+
+    <textarea id="subject" name="subject" placeholder="Bericht" class="w-100 my-2"></textarea>
+         <button class="btn btn-light mt-2 w-100" type="submit">Versturen</button>
+           
+                </div>
+                <div class="col-md-6 text-center">
+                    <h2>Of<span>...</span></h2>
+                    <div class="row">
+                        <div class="col-md-6"><i class="fab py-3 fa-whatsapp"></i><h6>Stuur een bericht naar 065253318</h6></div>
+                        <div class="col-md-6"><i class="fab py-3 fa-facebook-messenger"></i><h6>Stuur een bericht via facebook</h6></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"><i class="fas py-3 fa-envelope"></i><h6>Stuur een email naar 3DWD@gmail.com</h6></div>
+                        <div class="col-md-6"><i class="fas py-3 fa-mobile"></i><h6>Bel naar 0656354823</h6></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+                
+            
+
+
+
+
+  </form>
+        </div>
+        <div class="text-center">
+            
+        </div>
+    </div>
+</div>
+
+{{!--{{> footer }}--}}

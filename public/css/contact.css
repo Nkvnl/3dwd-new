@@ -1,0 +1,75 @@
+body{
+  overflow-y:hidden;
+}
+
+#contact-form input, textarea{
+  border-bottom:1px solid white;
+  border-top:0px solid green;
+  border-left:0px solid green;
+  border-right:0px solid green;
+  background:transparent;
+}
+
+#back{
+  font-size:3em;
+  color:white;
+  text-align:center;
+  background:#ffb400;
+  height:100px;
+  width:100px;
+  position:absolute;
+  top:46%;
+  left:0%;
+  /*z-index:100!important;*/
+  box-shadow:4px 4px 0px white;
+}
+
+i{
+  font-size:2.5em;
+}
+
+.fa-whatsapp:hover{
+  transform:scale(1.10,1.10);
+  transition:.8s ease-in-out;
+  color:#25d366;
+}
+
+.fa-facebook-messenger:hover{
+  transform:scale(1.10,1.10);
+  transition:.8s ease-in-out;
+  color:#3B5998;
+}
+
+.fa-mobile:hover{
+  transform:scale(1.10,1.10);
+  transition:.8s ease-in-out;
+  color:#333;
+}
+
+.fa-envelope:hover{
+  transform:scale(1.10,1.10);
+  transition:.8s ease-in-out;
+  color:red;
+}
+
+::placeholder{
+  opacity:.5;
+  color:white;
+  font-weight:200;
+}
+
+::placeholder:focus{
+  color:transparent;
+}
+
+#contact-form .col-md-10{
+  color:white;
+  padding-top:25vh;
+}
+
+#contact-form{
+  height:100vh;
+   background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */ 
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
