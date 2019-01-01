@@ -18,27 +18,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(robots({ UserAgent: '*', Disallow: '' }))
 
 app.get('/', function(req, res, next){
-       res.render('main/index') 
+       res.render('main/index', {title: 'Webdesign en websitebouw', desc: 'Gun jouw bedrijf een nieuwe website. Een website laat je maken bij 3DWD. Fantastische websites, nog betere prijzen.'}) 
 })
 
 app.get('/over-3dwd', function(req, res, next){
-       res.render('main/over') 
+       res.render('main/over', {title: 'Webdesign en websitebouw', desc: 'Gun jouw bedrijf een nieuwe website. Een website laat je maken bij 3DWD. Fantastische websites, nog betere prijzen.'}) 
 })
 
 app.get('/diensten', function(req, res, next){
-       res.render('main/diensten') 
+       res.render('main/diensten', {title: 'Webdesign en websitebouw', desc: 'Gun jouw bedrijf een nieuwe website. Een website laat je maken bij 3DWD. Fantastische websites, nog betere prijzen.'}) 
 })
 
 app.get('/portfolio', function(req, res, next){
-       res.render('main/portfolio') 
+       res.render('main/portfolio', {title: 'Webdesign en websitebouw', desc: 'Gun jouw bedrijf een nieuwe website. Een website laat je maken bij 3DWD. Fantastische websites, nog betere prijzen.'}) 
 })
 
 app.get('/contact', function(req, res, next){
-       res.render('main/contact') 
+       res.render('main/contact', {title: 'Webdesign en websitebouw', desc: 'Gun jouw bedrijf een nieuwe website. Een website laat je maken bij 3DWD. Fantastische websites, nog betere prijzen.'}) 
 })
 
 app.get('/blog', function(req, res, next){
-       res.render('main/blog') 
+       res.render('main/blog', {title: 'Webdesign en websitebouw', desc: 'Gun jouw bedrijf een nieuwe website. Een website laat je maken bij 3DWD. Fantastische websites, nog betere prijzen.'}) 
 })
 
 app.listen(app.get('port'), function() {
