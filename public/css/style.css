@@ -83,7 +83,7 @@ nav{
     z-index:-1!important;
     height:100vh!important;
     padding-bottom:10vh;
-    background-image: linear-gradient(rgba(0, 180, 219,.95), rgb(0, 131, 176,.95)), url("https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: linear-gradient(rgba(0, 180, 219,.95), rgb(0, 131, 176,.95)), url("../img/main.jpeg");
     background-size:cover;
 -webkit-clip-path: polygon(100% 0, 100% 85%, 85% 95%, 15% 95%, 0 85%, 0 0);
 clip-path: polygon(100% 0, 100% 85%, 85% 95%, 15% 95%, 0 85%, 0 0);
