@@ -1,54 +1,81 @@
 {{> header }}
-<div class="container-fluid text-center" id="main">
-    <div class="container px-5">
-        <h1 class="display-3 thin">Over 3DWD<span>.</span></h1>
-        <hr>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                    <p>
-                        Informatie, veel gestelde vragen en meer!
-                    </p>
-                </div>
-        </div>
-        <a href="/" class="btn mt-3 btn-light">Neem contact op! <span>&rarr;</span></a>
+
+<div class="container-fluid diensten-responsive" id="main" style="background:url('../img/diensten.png')">
+    <div class="row">
+     <div class="col-md-7">
+         <div class="container pad px-5">
+         <h1 class="display-3">Over 3D//D.</h1>
+         <p class="col-md-8 p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, inventore tenetur, temporibus recusandae eius quia quis iure perferendis totam voluptate.</p>
+         </div>
+     </div>
     </div>
+     
 </div>
 
 <div class="container-fluid" id="_3d">
-    <div class="container">
-        <div class="mb mt">
-            <div class="col-md-6 mx-auto">
-                <h2 class="text-center">3DWD<span>?</span></h2><br>
+    {{!--<div class="container">--}}
+        <div class="">
+            <div class="row">
+            <div class="col-md-6 p-5">
+                <h2 class=" ">3D//D???</h2><br>
                 <p>
                     3DWD staat voor <strong>3D Web Development</strong>, Het beschrijft het process van het bouwen van een website, namelijk:
                 </p>
             </div>
-            <div class="row">
-                <div class="col-md-4"><h2 class="text-center"><span>D</span>esign</h2>
-                <img src="/icons/design.png" class="img-fluid" alt="design">
+            <div class="col-md-6 p-5" id="grey"><h2 class=" ">1//Design</h2>
+                {{!--<img src="/icons/design.png" class="img-fluid" alt="design">--}}
                 <p>
                     Tijdens het webdesign process maak ik een schets van de website, ook is dit de tijd om de juiste kleuren, foto's, pagina opgave en teksten te gaan verzamelen. <br><br> Op deze manier zorg ik ervoor dat wij op een lijn zitten wat betreft het eindresultaat en weet jij precies wat je te wachten staat.    
                 </p>
                 </div>
-                <div class="col-md-4"><h2 class="text-center"><span>D</span>evelop</h2>
-                <img src="/icons/develop.png" class="img-fluid" alt="develop">
+            </div>
+            <div class="row">
+                
+                <div class="col-md-6 p-5" id="dark"><h2 class=" ">2//Develop</h2>
+                {{!--<img src="/icons/develop.png" class="img-fluid" alt="develop">--}}
                 <p>
                     Als het designprocess en klaar is en door jou is goedgekeurd, dan is het tijd om de website te gaan bouwen. Elke dag dat ik de website aan het maken ben, upload ik het resultaat naar een tijdelijke webserver waar jij toegang tot hebt.<br><br> Zo kun je de vooruitgang in de gaten en houden en zonodig nog bijsturen.
                 </p>
                 </div>
-                <div class="col-md-4"><h2 class="text-center"><span>D</span>eploy</h2>
-                <img src="/icons/deploy.png" class="img-fluid" alt="deploy">
+                <div class="col-md-6 p-5 text-light" id="blue"><h2 class=" ">3//Deploy</h2>
+                {{!--<img src="/icons/deploy.png" class="img-fluid" alt="deploy">--}}
                 <p>
-                    Zodra de website gebouwd en getest is, is het tijd om deze online te gaan zetten. Jouw website is nou door iedereen te zien en ook via de Google zoekresultaten te vinden. <br><br>Uiteraard kun je nadat het bouwen klaar is, nog altijd ondersteuning krijgen als de website niet naar behoren werkt.
+                    Zodra de website gebouwd en getest is, is het tijd om deze online te gaan zetten. Jouw website is nu door iedereen te zien en ook via de Google zoekresultaten te vinden. <br><br>Uiteraard kun je nadat het bouwen klaar is, nog altijd ondersteuning krijgen als de website niet naar behoren werkt.
                 </p>
                 </div>
             </div>
-            <div class="col-md-6 mt mx-auto ">
+            <div class="row">
                 
-            <p>Als je benieuwd bent naar het design van jouw nieuwe website, dan kan je dit gratis aanvragen via mijn contactpagina.<br>
-            Zo kun je achteraf kijken of je het design mooi vindt en of je een samenwerking aan zou willen gaan.</p>
+            <div class="col-md-6 p-5" id="grey">
+            <h2 class=" "> Technologie.</h2><br>
+                <h3 class= >Ik gebruik de volgende programma's / talen / technologieen.</h3><br>
+                    {{!--<div class="row col-10 mx-auto">--}}
+                        <div class="col-md-4">
+                          <p>Design</p>
+                    <h5>&mdash;Adobe Illustrator</h5>
+                    <h5>&mdash;Gravit Designer</h5><br>  
+                        </div>
+                        <div class="col-md-4">
+                          <p>Development</p>
+                    <h5>&mdash;HTML5</h5>
+                    <h5>&mdash;CSS3</h5>
+                    <h5>&mdash;JavaScript</h5>
+                    <h5>&mdash;Node.js</h5> 
+                    <h5>&mdash;Express</h5> 
+                    <h5>&mdash;MongoDB // Mongoose</h5> 
+                    <h5>&mdash;NPM</h5><br>  
+                        </div>
+                        <div class="col-md-4">
+                         <p>Deployment</p>
+                    <h5>&mdash;Heroku (test-server)</h5>
+                    <h5>&mdash;Ubuntu Debian 9 VPS van DigitalOcean in Amsterdam</h5>
+                    <h5>&mdash;PM2</h5>
+                    <h5>&mdash;Letsencrypt</h5>
+                    <h5>&mdash;Nginx</h5>
+                    <h5>&mdash;Node.js</h5><br>   
             </div>
-            <div class="col-md-6 mt mx-auto ">
+            </div>
+            <div class="col-md-6 p-5" id="dark">
                 <h2>Prijzen</h2><br>
                 <p>
                     De prijs van een website hangt compleet af van de tijdsinvestering die ik moet maken om de website van begin tot eind te bouwen.<br><br>
@@ -57,47 +84,34 @@
                    <h2 class="mt"> Bijkomende kosten</h2><br>
                 <p>
                     De standaard bijkomende kosten van het online houden van een website zijn deze 2 dingen:
-                    <h5><span>&mdash;</span>Domeinnaam</h5>
-                    <h5><span>&mdash;</span>Hosting</h5><br>
+                    <h5>&mdash;Domeinnaam</h5>
+                    <h5>&mdash;Hosting</h5><br>
                     Je domeinnaam is de URL van je website (www.website.nl). Gemiddelde kosten zijn €10,- per jaar.<br><br>
                     Hosting zit het eerste jaar inbegrepen inclusief SSL-beveiliging, na het eerste jaar is het €15,- per jaar(Ubuntu Debian 9 VPS).<br><br>
                     Je mag natuurlijk altijd je eigen hosting-provider kiezen, het opzetten hiervan hoort echter niet bij mijn diensten.
                 </p>
             </div>
-                <h2 class="mt text-center"> Technologie<span>.</span></h2><br>
-                <h3 class=text-center>Ik gebruik de volgende programma's <span>/</span> talen <span>/</span> technologieen<span>.</span></h3><br>
-                    <div class="row col-10 mx-auto">
-                        <div class="col-md-4">
-                          <p>Design</p>
-                    <h5><span>&mdash;</span>Adobe Illustrator</h5>
-                    <h5><span>&mdash;</span>Gravit Designer</h5><br>  
-                        </div>
-                        <div class="col-md-4">
-                          <p>Development</p>
-                    <h5><span>&mdash;</span>HTML5</h5>
-                    <h5><span>&mdash;</span>CSS3</h5>
-                    <h5><span>&mdash;</span>JavaScript</h5>
-                    <h5><span>&mdash;</span>Node.js</h5><br>  
-                        </div>
-                        <div class="col-md-4">
-                         <p>Deployment</p>
-                    <h5><span>&mdash;</span>Heroku (test-server)</h5>
-                    <h5><span>&mdash;</span>Ubuntu Debian 9 VPS van DigitalOcean in Amsterdam</h5>
-                    <h5><span>&mdash;</span>PM2</h5>
-                    <h5><span>&mdash;</span>Letsencrypt</h5>
-                    <h5><span>&mdash;</span>Nginx</h5>
-                    <h5><span>&mdash;</span>Node.js</h5><br>   
-                        </div>
-                    </div>
-                  <div class="col-md-6 mx-auto">
+            </div>
+ 
+                    <div class="row">
+                        
+                  <div class="col-md-6 p-5">
                       
-                <h2 class="mt"> Gratis websites?</h2><br>
+                <h2 class=""> Gratis websites?</h2><br>
                 <p>
-                    Het is mogelijk om gratis een website te laten bouwen als je een groot netwerk hebt. Op deze manier zou ik als sponsor van uw bedrijf of evenement een website kunnen bouwen.
+                    Het is mogelijk om gratis een website te laten bouwen
                 </p>
                 <a href="/sponsor" class="btn btn-info">Lees verder... </a>
                   </div>
+                  <div class="col-md-6 p-5" id="blue">
+                      <h2>Nog steeds vragen?</h2>
+                      <a href="/contact">Neem contact op!</a>
+                  </div>
+                    </div>
     </div>
+                   
+                        </div>
+                    </div>
 </div>
 </div>
 
