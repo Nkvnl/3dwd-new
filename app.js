@@ -10,7 +10,7 @@ var sitemap = require('express-sitemap');
 var expressHbs = require('express-handlebars');
 
 mongoose.connect('mongodb://niek:projects1@ds231956.mlab.com:31956/projects');
-app.set('port', (process.env.PORT || 3022))
+app.set('port', (process.env.PORT || 4034))
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 app.use(express.static("public"));
@@ -22,15 +22,15 @@ app.use(robots({ UserAgent: '*', Disallow: '' }))
 
 //MAIN
 
-// var project = {
-//        name:'Liefde geeft Licht',
-//        img:'../img/lgl.png',
-//        date:'Juni 2018',
-//        desc:'Dit is een extensie van de website van Lied van de Merel.',
-//        focus:'10% Backend / 90% Frontend',
-//        link:'https://www.liefdegeeftlicht.nl',
-//        tech:'HTML CSS JavaScript Node.js NGINX',
-// }
+var project = {
+       name:'Liefde geeft Licht',
+       img:'../img/lgl.png',
+       date:'Juni 2018',
+       desc:'Dit is een extensie van de website van Lied van de Merel.',
+       focus:'10% Backend / 90% Frontend',
+       link:'https://www.liefdegeeftlicht.nl',
+       tech:'HTML CSS JavaScript Node.js NGINX',
+}
 
 // addProject(project)
 
@@ -54,7 +54,7 @@ app.get('/', function(req, res, next){
 })
 
 app.get('/portfolio', function(req, res, next){
-       Project.find({},(err,projects)=>{
+       Project.find({},(err,projects) => {
               res.render('main/portfolio',{projects:projects}) 
        })
 })
